@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.17.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>PID: D:/temp/PID/include/utility/utility.h Source File</title>
+<title>PID: D:/temp/PID_control/include/utility/utility.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="codefolding.js"></script>
 <script type="text/javascript" src="clipboard.js"></script>
@@ -121,35 +121,38 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('utility_8h_sou
 <div class="contents">
 <a href="utility_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span></div>
 <div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span></div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="foldopen" id="foldopen00047" data-start="{" data-end="}">
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno"><a class="line" href="utility_8h.html#ac11501d434c701c22bb35939a0f992e5">   47</a></span><span class="keyword">inline</span> <span class="keyword">constexpr</span> T <a class="code hl_function" href="utility_8h.html#ac11501d434c701c22bb35939a0f992e5">saturate</a>(T x, T x_min, T x_max)</div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>{</div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    <span class="keywordflow">if</span> (x &lt; x_min)</div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    {</div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>        <span class="keywordflow">return</span> x_min;</div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    }</div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    <span class="keywordflow">else</span> <span class="keywordflow">if</span> (x &gt; x_max)</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span> </div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span><span class="preprocessor">#ifndef CONTROL_SYSTEM_PID_UTILITY_H</span></div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span><span class="preprocessor">#define CONTROL_SYSTEM_PID_UTILITY_H</span></div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span> </div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="foldopen" id="foldopen00051" data-start="{" data-end="}">
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno"><a class="line" href="utility_8h.html#ac11501d434c701c22bb35939a0f992e5">   51</a></span><span class="keyword">inline</span> <span class="keyword">constexpr</span> T <a class="code hl_function" href="utility_8h.html#ac11501d434c701c22bb35939a0f992e5">saturate</a>(T x, T x_min, T x_max)</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>{</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    <span class="keywordflow">if</span> (x &lt; x_min)</div>
 <div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    {</div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>        <span class="keywordflow">return</span> x_max;</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>        <span class="keywordflow">return</span> x_min;</div>
 <div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    }</div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    <span class="keywordflow">else</span></div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    <span class="keywordflow">else</span> <span class="keywordflow">if</span> (x &gt; x_max)</div>
 <div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    {</div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>        <span class="keywordflow">return</span> x;</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>        <span class="keywordflow">return</span> x_max;</div>
 <div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>    }</div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>}</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>    <span class="keywordflow">else</span></div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>    {</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>        <span class="keywordflow">return</span> x;</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>    }</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>}</div>
 </div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span> </div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span> </div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span><span class="preprocessor">#endif </span><span class="comment">// CONTROL_SYSTEM_PID_UTILITY_H</span></div>
-<div class="ttc" id="autility_8h_html_ac11501d434c701c22bb35939a0f992e5"><div class="ttname"><a href="utility_8h.html#ac11501d434c701c22bb35939a0f992e5">saturate</a></div><div class="ttdeci">constexpr T saturate(T x, T x_min, T x_max)</div><div class="ttdoc">Saturates a value within a specified range.</div><div class="ttdef"><b>Definition</b> utility.h:47</div></div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span> </div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span><span class="preprocessor">#endif </span><span class="comment">// CONTROL_SYSTEM_PID_UTILITY_H</span></div>
+<div class="ttc" id="autility_8h_html_ac11501d434c701c22bb35939a0f992e5"><div class="ttname"><a href="utility_8h.html#ac11501d434c701c22bb35939a0f992e5">saturate</a></div><div class="ttdeci">constexpr T saturate(T x, T x_min, T x_max)</div><div class="ttdoc">Saturates a value within a specified range.</div><div class="ttdef"><b>Definition</b> utility.h:51</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 </div><!-- container -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a href="dir_cbe0a0fdc1357fb271e5506355d7aa99.html">PID</a></li><li class="navelem"><b>include</b></li><li class="navelem"><b>utility</b></li><li class="navelem"><a href="utility_8h.html">utility.h</a></li>
+    <li class="navelem"><a href="dir_7f9b9ee9e63738661dfc75fdd4b35239.html">PID_control</a></li><li class="navelem"><b>include</b></li><li class="navelem"><b>utility</b></li><li class="navelem"><a href="utility_8h.html">utility.h</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.17.0 </li>
   </ul>
 </div>
