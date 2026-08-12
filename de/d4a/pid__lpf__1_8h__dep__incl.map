@@ -1,0 +1,8 @@
+<map id="include/pid/pid_lpf_1.h" name="include/pid/pid_lpf_1.h">
+<area shape="rect" id="Node000001" title="PID controller with first&#45;order low&#45;pass filtered derivative." alt="" coords="189,5,340,32"/>
+<area shape="rect" id="Node000002" href="$d8/dc1/control__system_8h.html" title="Main public header for the Control System library." alt="" coords="5,80,172,107"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="222,39,120,82,118,77,217,38"/>
+<area shape="rect" id="Node000003" href="$da/d7f/pid__lpf__1_8tpp.html" title=" " alt="" coords="195,80,334,107"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="258,46,260,81,255,78,254,49"/>
+<area shape="poly" id="edge3_Node000003_Node000001" title=" " alt="" coords="271,63,270,35,273,31,276,66"/>
+</map>

@@ -1,0 +1,8 @@
+<map id="src/proportional/p.tpp" name="src/proportional/p.tpp">
+<area shape="rect" id="Node000001" title=" " alt="" coords="17,5,160,32"/>
+<area shape="rect" id="Node000002" href="$d5/def/p_8h.html" title="Proportional (P) controller." alt="" coords="11,80,166,107"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="81,45,84,80,79,79,79,50"/>
+<area shape="poly" id="edge3_Node000002_Node000001" title=" " alt="" coords="95,64,95,35,97,30,100,65"/>
+<area shape="rect" id="Node000003" href="$d8/dc1/control__system_8h.html" title="Main public header for the Control System library." alt="" coords="5,155,172,181"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="90,121,91,155,86,153,87,124"/>
+</map>

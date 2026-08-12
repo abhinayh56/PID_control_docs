@@ -1,0 +1,5 @@
+<map id="control_system::pid::PID_S::PID_S" name="control_system::pid::PID_S::PID_S">
+<area shape="rect" id="Node000001" title="Constructs a PID controller." alt="" coords="189,5,324,48"/>
+<area shape="rect" id="Node000002" href="$d1/da2/classcontrol__system_1_1pid_1_1_p_i_d___s.html#af418f60d3535115a1e55974004480404" title="Resets the PID controller state." alt="" coords="5,5,141,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="170,27,141,29,141,24,176,26"/>
+</map>

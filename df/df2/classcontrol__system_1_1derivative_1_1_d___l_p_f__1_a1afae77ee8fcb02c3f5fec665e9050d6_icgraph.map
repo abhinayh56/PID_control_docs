@@ -1,0 +1,5 @@
+<map id="control_system::derivative::D_LPF_1::D_LPF_1" name="control_system::derivative::D_LPF_1::D_LPF_1">
+<area shape="rect" id="Node000001" title="Constructs a derivative controller with filtered output." alt="" coords="228,5,402,48"/>
+<area shape="rect" id="Node000002" href="$df/df2/classcontrol__system_1_1derivative_1_1_d___l_p_f__1.html#abda5884d93eb389b05a46bb6a9ffbd35" title="Sets the low&#45;pass filter cutoff frequency." alt="" coords="5,5,180,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="210,27,180,29,180,24,215,26"/>
+</map>

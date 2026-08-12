@@ -1,0 +1,8 @@
+<map id="include/pd/pd_lpf_1.h" name="include/pd/pd_lpf_1.h">
+<area shape="rect" id="Node000001" title="Proportional&#45;Derivative (PD) controller with first&#45;order low&#45;pass filtering." alt="" coords="190,5,334,32"/>
+<area shape="rect" id="Node000002" href="$d8/dc1/control__system_8h.html" title="Main public header for the Control System library." alt="" coords="5,80,172,107"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="220,39,120,82,118,77,215,38"/>
+<area shape="rect" id="Node000003" href="$d9/df0/pd__lpf__1_8tpp.html" title=" " alt="" coords="196,80,328,107"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="255,46,257,81,253,78,251,49"/>
+<area shape="poly" id="edge3_Node000003_Node000001" title=" " alt="" coords="268,63,267,35,271,31,273,66"/>
+</map>

@@ -1,0 +1,8 @@
+<map id="include/pid/pid_s.h" name="include/pid/pid_s.h">
+<area shape="rect" id="Node000001" title="PID controller with setpoint weighting." alt="" coords="189,5,318,32"/>
+<area shape="rect" id="Node000002" href="$d8/dc1/control__system_8h.html" title="Main public header for the Control System library." alt="" coords="5,80,172,107"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="214,39,119,82,117,77,208,38"/>
+<area shape="rect" id="Node000003" href="$d4/d1b/pid__s_8tpp.html" title=" " alt="" coords="195,80,312,107"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="247,46,249,81,245,78,243,49"/>
+<area shape="poly" id="edge3_Node000003_Node000001" title=" " alt="" coords="260,63,259,35,263,31,265,66"/>
+</map>

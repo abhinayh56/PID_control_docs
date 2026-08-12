@@ -1,0 +1,5 @@
+<map id="control_system::pd::PD::set_Kd" name="control_system::pd::PD::set_Kd">
+<area shape="rect" id="Node000001" title="Sets the derivative gain." alt="" coords="5,5,138,48"/>
+<area shape="rect" id="Node000002" href="$df/db8/classcontrol__system_1_1pd_1_1_p_d.html#a1ededff3bd579d8d79f53c4df46a9cad" title="Constructs a PD controller." alt="" coords="186,5,318,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="138,24,173,26,168,27,138,29"/>
+</map>

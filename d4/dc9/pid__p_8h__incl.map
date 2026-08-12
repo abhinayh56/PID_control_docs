@@ -1,0 +1,10 @@
+<map id="include/pid/pid_p.h" name="include/pid/pid_p.h">
+<area shape="rect" id="Node000001" title="PID controller with configurable derivative filtering and feed&#45;forward." alt="" coords="158,5,288,32"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,80,70,107"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="191,35,85,76,83,71,190,30"/>
+<area shape="rect" id="Node000003" href="$d5/d47/utility_8h.html" title="Utility functions for the Control System library." alt="" coords="94,80,203,107"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="212,32,173,72,170,67,207,34"/>
+<area shape="rect" id="Node000004" href="$da/d9a/pid__p_8tpp.html" title=" " alt="" coords="227,80,368,107"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="230,30,269,70,263,69,228,35"/>
+<area shape="poly" id="edge4_Node000004_Node000001" title=" " alt="" coords="289,79,253,45,255,40,294,80"/>
+</map>

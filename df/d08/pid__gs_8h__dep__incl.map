@@ -1,0 +1,8 @@
+<map id="include/pid/pid_gs.h" name="include/pid/pid_gs.h">
+<area shape="rect" id="Node000001" title="PID controller with gain scheduling." alt="" coords="190,5,326,32"/>
+<area shape="rect" id="Node000002" href="$d8/dc1/control__system_8h.html" title="Main public header for the Control System library." alt="" coords="5,80,172,107"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="217,39,119,82,117,77,212,38"/>
+<area shape="rect" id="Node000003" href="$df/d49/pid__gs_8tpp.html" title=" " alt="" coords="196,80,320,107"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="251,46,253,81,249,78,247,49"/>
+<area shape="poly" id="edge3_Node000003_Node000001" title=" " alt="" coords="264,63,263,35,267,31,269,66"/>
+</map>

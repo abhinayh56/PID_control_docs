@@ -24,7 +24,8 @@
 */
 var NAVTREE =
 [
-  [ "PID", "index.html", [
+  [ "PID Control", "index.html", [
+    [ "PID", "d3/dcc/md__r_e_a_d_m_e.html", null ],
     [ "Namespaces", "namespaces.html", [
       [ "Namespace List", "namespaces.html", "namespaces_dup" ],
       [ "Namespace Members", "namespacemembers.html", [
@@ -37,7 +38,8 @@ var NAVTREE =
       [ "Class Index", "classes.html", null ],
       [ "Class Members", "functions.html", [
         [ "All", "functions.html", "functions_dup" ],
-        [ "Functions", "functions_func.html", "functions_func" ]
+        [ "Functions", "functions_func.html", "functions_func" ],
+        [ "Variables", "functions_vars.html", null ]
       ] ]
     ] ],
     [ "Files", "files.html", [
@@ -54,7 +56,9 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "annotated.html",
-"classcontrol__system_1_1pid_1_1_p_i_d___s.html#adf6a7a87c78539820a332de741d8e29b"
+"d5/d50/classcontrol__system_1_1pid_1_1_p_i_d.html#a46fcdc97d609a48fbf39890e0a966ee5",
+"d9/d7c/pd_8h_source.html",
+"dc/d03/classcontrol__system_1_1integral_1_1_i.html#ae199f0f2cd8bc045f2f485c435ac6c79"
 ];
 
 const SYNCONMSG = 'click to disable panel synchronization';

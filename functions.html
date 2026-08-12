@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.17.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>PID: Class Members</title>
+<title>PID Control: Class Members</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="codefolding.js"></script>
 <script type="text/javascript" src="clipboard.js"></script>
@@ -30,9 +30,9 @@ mermaid.initialize({ startOnLoad: true, theme: theme });
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PID<span id="projectnumber">&#160;1.0</span>
+   <div id="projectname">PID Control<span id="projectnumber">&#160;1.0</span>
    </div>
-   <div id="projectbrief">PID and its variations in C++</div>
+   <div id="projectbrief">Discrete time implementation of P, PI, PD, PID. Including derivative filter, integral clamping, feed-forward, gain scheduling in standard and parallel form.</div>
   </td>
  </tr>
  </tbody>
@@ -116,13 +116,15 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('functions.html
 </div>
 
 <div class="contents">
-<div class="textblock">Here is a list of all documented class members with links to the class documentation for each member:</div><br/>
-<div class="qindex"><a class="qindex" href="functions.html#index_d">D</a><div class="alphasepar"></div><a class="qindex" href="functions_g.html#index_g">G</a><div class="alphasepar"></div><a class="qindex" href="functions_i.html#index_i">I</a><div class="alphasepar"></div><a class="qindex" href="functions_m.html#index_m">M</a><div class="alphasepar"></div><a class="qindex" href="functions_p.html#index_p">P</a><div class="alphasepar"></div><a class="qindex" href="functions_r.html#index_r">R</a><div class="alphasepar"></div><a class="qindex" href="functions_s.html#index_s">S</a><div class="alphasepar"></div><a class="qindex" href="functions_u.html#index_u">U</a></div>
+<div class="textblock">Here is a list of all class members with links to the classes they belong to:</div><br/>
+<div class="qindex"><a class="qindex" href="functions.html#index_d">D</a><div class="alphasepar"></div><a class="qindex" href="functions_e.html#index_e">E</a><div class="alphasepar"></div><a class="qindex" href="functions_f.html#index_f">F</a><div class="alphasepar"></div><a class="qindex" href="functions_g.html#index_g">G</a><div class="alphasepar"></div><a class="qindex" href="functions_i.html#index_i">I</a><div class="alphasepar"></div><a class="qindex" href="functions_k.html#index_k">K</a><div class="alphasepar"></div><a class="qindex" href="functions_l.html#index_l">L</a><div class="alphasepar"></div><a class="qindex" href="functions_m.html#index_m">M</a><div class="alphasepar"></div><a class="qindex" href="functions_o.html#index_o">O</a><div class="alphasepar"></div><a class="qindex" href="functions_p.html#index_p">P</a><div class="alphasepar"></div><a class="qindex" href="functions_r.html#index_r">R</a><div class="alphasepar"></div><a class="qindex" href="functions_s.html#index_s">S</a><div class="alphasepar"></div><a class="qindex" href="functions_t.html#index_t">T</a><div class="alphasepar"></div><a class="qindex" href="functions_u.html#index_u">U</a></div>
 
 
 <h3 class="doxsection"><a id="index_d" name="index_d"></a>- d -</h3><ul>
-<li>D()&#160;:&#160;<a class="el" href="classcontrol__system_1_1derivative_1_1_d.html#a487ca6ecab32ef6de25de0bf44228e24">control_system::derivative::D&lt; T &gt;</a></li>
-<li>D_LPF_1()&#160;:&#160;<a class="el" href="classcontrol__system_1_1derivative_1_1_d___l_p_f__1.html#a1afae77ee8fcb02c3f5fec665e9050d6">control_system::derivative::D_LPF_1&lt; T &gt;</a></li>
+<li>D()&#160;:&#160;<a class="el" href="d4/d68/classcontrol__system_1_1derivative_1_1_d.html#a487ca6ecab32ef6de25de0bf44228e24">control_system::derivative::D&lt; T &gt;</a>, <a class="el" href="da/d54/classcontrol__system_1_1pid_1_1_p_i_d___g_s.html#a7732f49ce28197d32b2dc87f58a6ae71">control_system::pid::PID_GS&lt; T &gt;</a>, <a class="el" href="da/d0f/classcontrol__system_1_1pid_1_1_p_i_d___p.html#a60ffa4b9aabefce7b8c283f4cdf3dc9b">control_system::pid::PID_P&lt; T &gt;</a>, <a class="el" href="d1/da2/classcontrol__system_1_1pid_1_1_p_i_d___s.html#ae18cf9234ae4dc4d16dd2492547f4bef">control_system::pid::PID_S&lt; T &gt;</a></li>
+<li>d_filter&#160;:&#160;<a class="el" href="da/d54/classcontrol__system_1_1pid_1_1_p_i_d___g_s.html#ab7f99429573dc83e97535143be74fe7b">control_system::pid::PID_GS&lt; T &gt;</a>, <a class="el" href="da/d0f/classcontrol__system_1_1pid_1_1_p_i_d___p.html#ac604bc7b7b7aab1fbded5d64b2a5867a">control_system::pid::PID_P&lt; T &gt;</a>, <a class="el" href="d1/da2/classcontrol__system_1_1pid_1_1_p_i_d___s.html#a76bae0b08eddc28d69acef9273305322">control_system::pid::PID_S&lt; T &gt;</a></li>
+<li>D_LPF_1()&#160;:&#160;<a class="el" href="df/df2/classcontrol__system_1_1derivative_1_1_d___l_p_f__1.html#a1afae77ee8fcb02c3f5fec665e9050d6">control_system::derivative::D_LPF_1&lt; T &gt;</a></li>
+<li>dt&#160;:&#160;<a class="el" href="d4/d68/classcontrol__system_1_1derivative_1_1_d.html#ad80b284decfb7777ae4df9c129f736d0">control_system::derivative::D&lt; T &gt;</a>, <a class="el" href="df/df2/classcontrol__system_1_1derivative_1_1_d___l_p_f__1.html#a49b1cede68ce14e584b24b719a015ec3">control_system::derivative::D_LPF_1&lt; T &gt;</a>, <a class="el" href="dc/d03/classcontrol__system_1_1integral_1_1_i.html#a8b753ac08ff2a31443fd017aa93fb0b3">control_system::integral::I&lt; T &gt;</a>, <a class="el" href="df/db8/classcontrol__system_1_1pd_1_1_p_d.html#a886437bd572579de8af81373fe40c01d">control_system::pd::PD&lt; T &gt;</a>, <a class="el" href="d4/d78/classcontrol__system_1_1pd_1_1_p_d___l_p_f__1.html#adb5b4b88bc8167381e20793a573a5b77">control_system::pd::PD_LPF_1&lt; T &gt;</a>, <a class="el" href="d6/d61/classcontrol__system_1_1pi_1_1_p_i.html#a8633be833944a2541ef1ee193c453954">control_system::pi::PI&lt; T &gt;</a>, <a class="el" href="d5/d50/classcontrol__system_1_1pid_1_1_p_i_d.html#a4ea4f135f4a42bec6562474613959c34">control_system::pid::PID&lt; T &gt;</a>, <a class="el" href="da/d54/classcontrol__system_1_1pid_1_1_p_i_d___g_s.html#a9a46f6a2de4ffbc34c7156b87895df61">control_system::pid::PID_GS&lt; T &gt;</a>, <a class="el" href="d7/d00/classcontrol__system_1_1pid_1_1_p_i_d___l_p_f__1.html#a8912410b7cefe18945e1a0881488bef5">control_system::pid::PID_LPF_1&lt; T &gt;</a>, <a class="el" href="d7/d7f/classcontrol__system_1_1pid_1_1_p_i_d___l_p_f__1___f_f.html#a1a112ae9701044f8f9479df1d4f03f84">control_system::pid::PID_LPF_1_FF&lt; T &gt;</a>, <a class="el" href="da/d0f/classcontrol__system_1_1pid_1_1_p_i_d___p.html#a2f5a868f2b34d76842e3e1b4d3371898">control_system::pid::PID_P&lt; T &gt;</a>, <a class="el" href="d1/da2/classcontrol__system_1_1pid_1_1_p_i_d___s.html#af53cf975d2351c3dc7fe792d379c1c5f">control_system::pid::PID_S&lt; T &gt;</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

@@ -1,0 +1,8 @@
+<map id="include/derivative/d_lpf_1.h" name="include/derivative/d_lpf_1.h">
+<area shape="rect" id="Node000001" title="Derivative controller with first&#45;order low&#45;pass filtering." alt="" coords="201,5,323,48"/>
+<area shape="rect" id="Node000002" href="$d8/dc1/control__system_8h.html" title="Main public header for the Control System library." alt="" coords="5,104,172,131"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="210,56,114,106,112,101,205,55"/>
+<area shape="rect" id="Node000003" href="$dd/dd9/d__lpf__1_8tpp.html" title=" " alt="" coords="196,96,328,139"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="255,62,256,97,252,94,251,66"/>
+<area shape="poly" id="edge3_Node000003_Node000001" title=" " alt="" coords="268,79,268,50,271,46,273,82"/>
+</map>
