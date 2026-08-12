@@ -1,0 +1,7 @@
+\_form#0=215x30:\[u(t) = K_p e(t) + K_i \int e(t)\,dt + K_d \frac{de(t)}{dt}
+\]
+\_form#1=19x14:$e(t)$
+\_form#2=16x14:$K_p$
+\_form#3=14x13:$K_i$
+\_form#4=16x13:$K_d$
+\_form#5=21x14:$u(t)$

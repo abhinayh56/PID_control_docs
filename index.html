@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.17.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>PID Control: Main Page</title>
+<title>PID Control: PID Control Library</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="codefolding.js"></script>
 <script type="text/javascript" src="clipboard.js"></script>
@@ -115,10 +115,111 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('index.html',''
 </div>
 </div>
 
-<div class="header">
-  <div class="headertitle"><div class="title">PID Control Documentation</div></div>
+<div><div class="header">
+  <div class="headertitle"><div class="title">PID Control Library </div></div>
 </div><!--header-->
 <div class="contents">
+<div class="textblock"><h1 class="doxsection"><a class="anchor" id="intro_sec"></a>
+Introduction</h1>
+<p>This library provides a collection of reusable C++ components for implementing Proportional-Integral-Derivative (PID) based control systems.</p>
+<p>The library is designed to provide modular implementations of individual control actions as well as commonly used combinations such as P, PI, PD, and PID controllers.</p>
+<h1 class="doxsection"><a class="anchor" id="features_sec"></a>
+Features</h1>
+<p>The library provides implementations for:</p>
+<ul>
+<li>Proportional (P) control</li>
+<li>Integral (I) control</li>
+<li>Derivative (D) control</li>
+<li>Proportional-Integral (PI) control</li>
+<li>Proportional-Derivative (PD) control</li>
+<li>Proportional-Integral-Derivative (PID) control</li>
+<li>PID controllers with different structural forms</li>
+<li>Derivative low-pass filtering</li>
+<li>PID low-pass filtering</li>
+<li>Feed-forward PID control</li>
+<li>Utility functions for control-system implementations</li>
+</ul>
+<h1 class="doxsection"><a class="anchor" id="organization_sec"></a>
+Library Organization</h1>
+<p>The library is organized into separate modules according to the type of controller:</p>
+<div class="fragment"><div class="line">include/</div>
+<div class="line">├── <a class="code hl_namespace" href="dd/dd9/namespacecontrol__system.html">control_system</a>.h</div>
+<div class="line">├── <a class="code hl_namespace" href="d6/dbc/namespacederivative.html">derivative</a>/</div>
+<div class="line">│   ├── d.h</div>
+<div class="line">│   └── d_lpf_1.h</div>
+<div class="line">├── <a class="code hl_namespace" href="d1/d2c/namespaceintegral.html">integral</a>/</div>
+<div class="line">│   └── i.h</div>
+<div class="line">├── <a class="code hl_namespace" href="d2/d3c/namespacepd.html">pd</a>/</div>
+<div class="line">│   ├── <a class="code hl_namespace" href="d2/d3c/namespacepd.html">pd</a>.h</div>
+<div class="line">│   └── pd_lpf_1.h</div>
+<div class="line">├── <a class="code hl_namespace" href="dd/d24/namespacepi.html">pi</a>/</div>
+<div class="line">│   └── <a class="code hl_namespace" href="dd/d24/namespacepi.html">pi</a>.h</div>
+<div class="line">├── <a class="code hl_namespace" href="da/dbf/namespacepid.html">pid</a>/</div>
+<div class="line">│   ├── <a class="code hl_namespace" href="da/dbf/namespacepid.html">pid</a>.h</div>
+<div class="line">│   ├── pid_gs.h</div>
+<div class="line">│   ├── pid_lpf_1.h</div>
+<div class="line">│   ├── pid_lpf_1_ff.h</div>
+<div class="line">│   ├── pid_p.h</div>
+<div class="line">│   └── pid_s.h</div>
+<div class="line">├── <a class="code hl_namespace" href="dd/d00/namespaceproportional.html">proportional</a>/</div>
+<div class="line">│   └── p.h</div>
+<div class="line">└── utility/</div>
+<div class="line">    └── utility.h</div>
+<div class="ttc" id="anamespacecontrol__system_html"><div class="ttname"><a href="dd/dd9/namespacecontrol__system.html">control_system</a></div><div class="ttdoc">Contains control-system algorithms and controllers.</div><div class="ttdef"><b>Definition</b> <a href="dd/d6f/d_8h_source.html#l00031">d.h:32</a></div></div>
+<div class="ttc" id="anamespacederivative_html"><div class="ttname"><a href="d6/dbc/namespacederivative.html">derivative</a></div><div class="ttdoc">Contains derivative controller implementations.</div></div>
+<div class="ttc" id="anamespaceintegral_html"><div class="ttname"><a href="d1/d2c/namespaceintegral.html">integral</a></div><div class="ttdoc">Contains integral controller implementations.</div></div>
+<div class="ttc" id="anamespacepd_html"><div class="ttname"><a href="d2/d3c/namespacepd.html">pd</a></div><div class="ttdoc">Contains proportional-derivative controller implementations.</div></div>
+<div class="ttc" id="anamespacepi_html"><div class="ttname"><a href="dd/d24/namespacepi.html">pi</a></div><div class="ttdoc">Contains proportional-integral controller implementations.</div></div>
+<div class="ttc" id="anamespacepid_html"><div class="ttname"><a href="da/dbf/namespacepid.html">pid</a></div><div class="ttdoc">Contains proportional-integral-derivative controller implementations.</div></div>
+<div class="ttc" id="anamespaceproportional_html"><div class="ttname"><a href="dd/d00/namespaceproportional.html">proportional</a></div><div class="ttdoc">Contains proportional control implementations.</div></div>
+</div><!-- fragment --><p>The implementation of the templates is located in the corresponding <span class="tt">.tpp</span> files under the <span class="tt">src</span> directory.</p>
+<h1 class="doxsection"><a class="anchor" id="controllers_sec"></a>
+Controllers</h1>
+<h2 class="doxsection"><a class="anchor" id="p_controller"></a>
+Proportional Controller</h2>
+<p>The proportional controller generates a control action proportional to the current error.</p>
+<h2 class="doxsection"><a class="anchor" id="i_controller"></a>
+Integral Controller</h2>
+<p>The integral controller accumulates the error over time and is commonly used to eliminate steady-state error.</p>
+<h2 class="doxsection"><a class="anchor" id="d_controller"></a>
+Derivative Controller</h2>
+<p>The derivative controller generates a control action based on the rate of change of the error.</p>
+<h2 class="doxsection"><a class="anchor" id="pi_controller"></a>
+PI Controller</h2>
+<p>Combines proportional and integral actions to provide improved tracking while eliminating steady-state error.</p>
+<h2 class="doxsection"><a class="anchor" id="pd_controller"></a>
+PD Controller</h2>
+<p>Combines proportional and derivative actions to improve transient response and damping.</p>
+<h2 class="doxsection"><a class="anchor" id="pid_controller"></a>
+PID Controller</h2>
+<p>Combines proportional, integral, and derivative actions:</p>
+<p class="formulaDsp">
+<picture><source srcset="form_0_dark.png" media="(prefers-color-scheme: dark)"/><img class="formulaDsp" alt="\&zwj;[u(t) = K_p e(t) + K_i \int e(t)\,dt + K_d \frac{de(t)}{dt}
+\&zwj;]" src="form_0.png" width="215" height="30"/></picture>
+</p>
+<p>where:</p>
+<ul>
+<li><picture><source srcset="form_1_dark.png" media="(prefers-color-scheme: dark)"/><img class="formulaInl" alt="$e(t)$" src="form_1.png" width="19" height="14"/></picture> is the control error.</li>
+<li><picture><source srcset="form_2_dark.png" media="(prefers-color-scheme: dark)"/><img class="formulaInl" alt="$K_p$" src="form_2.png" width="16" height="14"/></picture> is the proportional gain.</li>
+<li><picture><source srcset="form_3_dark.png" media="(prefers-color-scheme: dark)"/><img class="formulaInl" alt="$K_i$" src="form_3.png" width="14" height="13"/></picture> is the integral gain.</li>
+<li><picture><source srcset="form_4_dark.png" media="(prefers-color-scheme: dark)"/><img class="formulaInl" alt="$K_d$" src="form_4.png" width="16" height="13"/></picture> is the derivative gain.</li>
+<li><picture><source srcset="form_5_dark.png" media="(prefers-color-scheme: dark)"/><img class="formulaInl" alt="$u(t)$" src="form_5.png" width="21" height="14"/></picture> is the controller output.</li>
+</ul>
+<h1 class="doxsection"><a class="anchor" id="filtering_sec"></a>
+Filtering</h1>
+<p>The library provides low-pass filtered derivative and PID implementations to reduce the influence of high-frequency measurement noise on the derivative action.</p>
+<h1 class="doxsection"><a class="anchor" id="feedforward_sec"></a>
+Feed-Forward Control</h1>
+<p>The library also provides a PID implementation with feed-forward support. Feed-forward control can be used when a known component of the required control action can be estimated from the desired trajectory or system dynamics.</p>
+<h1 class="doxsection"><a class="anchor" id="documentation_sec"></a>
+Documentation</h1>
+<p>This documentation is generated using Doxygen.</p>
+<p>The public API is provided through the header files under the <span class="tt">include</span> directory, while template implementations are contained in the corresponding <span class="tt">.tpp</span> files under the <span class="tt">src</span> directory.</p>
+<h1 class="doxsection"><a class="anchor" id="license_sec"></a>
+License</h1>
+<dl class="section author"><dt>Author</dt><dd></dd></dl>
+<dl class="section version"><dt>Version</dt><dd></dd></dl>
+</div></div><!-- PageDoc -->
 <a href="doxygen_crawl.html"></a>
 </div><!-- contents -->
 </div><!-- doc-content -->
